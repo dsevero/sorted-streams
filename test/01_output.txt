@@ -1,0 +1,4 @@
+timestamp: 1, value: 2
+timestamp: 4, value: 2
+timestamp: 9, value: 4
+sum: 8, count: 3, average: 2.6666666666666665
