@@ -4,11 +4,11 @@ import sys
 from itertools import chain
 
 
-def to_dict(el: tuple):
+def to_dict(el: tuple) -> dict:
     return {'timestamp': el[0],
             'value': el[1]}
 
-def to_tuple(el: dict):
+def to_tuple(el: dict) -> tuple:
     return (el['timestamp'], el['value'])
 
 
@@ -19,7 +19,7 @@ class MergedOrderedStream:
         self.head = next(self.stream)
 
     @classmethod
-    def init_from_json(cls, filepath: str) -> list:
+    def init_from_json(cls, filepath: str):
         ''' Constructs the merged stream from a json filepath'''
         with open(filepath, 'r') as f:
             streams = json.load(f)
