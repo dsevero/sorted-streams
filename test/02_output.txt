@@ -11,4 +11,4 @@ timestamp: 5, value: 11
 timestamp: 7, value: 24
 count: 10, sum: 224, average: 22.4
 timestamp: 7, value: 18
-sum: 242, count: 11, average: 22
+sum: 242, count: 11, average: 22.0

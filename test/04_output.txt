@@ -1,0 +1,9 @@
+timestamp: 0, value: 10
+timestamp: 1, value: 12
+timestamp: 2, value: 20
+timestamp: 2, value: 93
+timestamp: 5, value: 11
+count: 5, sum: 146, average: 29.2
+timestamp: 7, value: 24
+timestamp: 7, value: 18
+sum: 188, count: 7, average: 26.857142857142858
