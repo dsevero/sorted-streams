@@ -1,3 +1,16 @@
+Solution
+========
+
+The solution is done in pure Python (version 3.6 or superior).
+
+I opted to use a min-heap datastructure in [`heapq`](https://docs.python.org/3.0/library/heapq.html) to take advantage of `O(log <heap size>)` insertion. 
+
+A simpler solution would be to use peekable-iterators from [`more-itertools`](https://pypi.org/project/more-itertools/), but the challenge explicitly said to create a class.
+
+In `02_output.txt` the final printed average had no decimal places (`22` instead of `22.0`), so I manually added the zero. I also added additional tests in `tests/{03,04}_*` and `tests.py`.
+
+Overall, it took a bit over 30 minutes to complete.
+
 Exercise summary
 ================
 
@@ -41,3 +54,4 @@ Testing
 For convenience, a very simple test harness is set up via `make test`. Input "stream" values are provided in JSON files, an array of array where each inner array is the contents of one particular stream, and expected output is provided in a text file. Note that multiple orders are valid because order is on the timestamp field and not on value field, so the test harness should be considered a helpful tool but not the only definition of correctness.
 
 Edit `launcher.sh` to run your application as needed if you find it helpful.
+
